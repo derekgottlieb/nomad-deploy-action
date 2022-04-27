@@ -1,4 +1,4 @@
-FROM hendrikmaus/nomad-cli:0.12.7
+FROM hendrikmaus/nomad-cli:1.2.3
 
 RUN apk update && apk add bash gettext curl
 
