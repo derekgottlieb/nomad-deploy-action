@@ -13,6 +13,9 @@ inputs:
   config:
     description: 'Path to the levant config file'
     required: true
+  levant_args:
+    description: 'Addition args for levant'
+    required: false
 runs:
   using: 'docker'
   image: 'Dockerfile'
@@ -21,6 +24,7 @@ runs:
     NOMAD_ADDR: ${{ inputs.address }}
     NOMAD_JOB: ${{ inputs.job }}
     LEVANT_CONFIG: ${{ inputs.config }}
+    LEVANT_ARGS: ${{ inputs.levant_args }}
 branding:
   icon: 'upload-cloud'
   color: 'green'

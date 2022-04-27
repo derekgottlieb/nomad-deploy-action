@@ -32,6 +32,7 @@ jobs:
 * `address`: public address of a nomad server (passed as `-address=`)
 * `job`: path to the nomad job specification to run ([defined according to the spec here](https://www.nomadproject.io/docs/job-specification/index.html))
 * `config`: path to the levant config file
+* `levant_args`: additional levant args. such as -force 
 
 ## Todo
 
