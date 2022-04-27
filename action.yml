@@ -16,6 +16,7 @@ inputs:
   levant_args:
     description: 'Addition args for levant'
     required: false
+    default: ''
 runs:
   using: 'docker'
   image: 'Dockerfile'
