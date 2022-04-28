@@ -19,7 +19,7 @@ inputs:
     default: ''
 runs:
   using: 'docker'
-  image: 'Dockerfile'
+  image: 'docker://ghcr.io/marfatech/nomad-deploy-action:v1.0.5'
   env:
     NOMAD_TOKEN: ${{ inputs.token }}
     NOMAD_ADDR: ${{ inputs.address }}
