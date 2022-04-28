@@ -18,7 +18,7 @@ jobs:
         uses: actions/checkout@v1
 
       - name: Deploy with Nomad
-        uses: qazz92/nomad-deploy
+        uses: marfatech/nomad-deploy
         with:
           token: ${{ secrets.YOUR_NOMAD_SECRET }}
           address: ${{ secrets.YOUR_NOMAD_SERVER }}
@@ -34,7 +34,4 @@ jobs:
 * `config`: path to the levant config file
 * `levant_args`: additional levant args. such as -force 
 
-## Todo
 
-- [x] Verify it works
-- [ ] Validation config file & job file
